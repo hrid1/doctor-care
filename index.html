@@ -44,8 +44,48 @@
       };
     </script>
   </head>
-  <body>
-    <h2 class="text-3xl text-red font-sans text-primary">Hello Doctor</h2>
-    <i class="ri-arrow-right-down-fill"></i>
+  <body class="bg-brand-beige font-primary overflow-x-hidden">
+    <!-- header section -->
+    <header
+      id="header"
+      class="bg-[#dce9e2]  fixed top-0 left-0 right-0 w-full"
+    >
+      <nav
+        class="container mx-auto max-w-screen-xl flex justify-between items-center p-4"
+      >
+        <!-- logo -->
+        <div class="text-xl font-bold">
+          Doctor<span class="text-primary">Care</span>
+        </div>
+        <!-- navlinks -->
+        <ul class="hidden md:flex items-center gap-6 font-medium">
+          <li><a class="hover:text-primary" href="/">Home</a></li>
+          <li><a class="hover:text-primary" href="#/about">About</a></li>
+          <li><a class="hover:text-primary" href="#/contact">Contact</a></li>
+          <li>
+            <a class="hover:text-primary" href="#/department">Department</a>
+          </li>
+        </ul>
+        <!-- call to action  -->
+        <div class="hidden md:block">
+          <button
+            class="px-6 py-2.5 rounded-full text-sm text-primary font-bold border border-primary uppercase hover:text-white hover:bg-primary transition-all duration-300"
+          >
+            Agendar consulta
+          </button>
+        </div>
+
+        <!-- for mobile navbar-->
+        <div class="md:hidden">
+          <button id="mobile-menu-button" class="navbar-burger flex ic p-3">
+            <img
+              class="w-4 h-4 block fill-current"
+              src="./images/menu-icon.svg"
+              alt=""
+            />
+          </button>
+        </div>
+      </nav>
+    </header>
   </body>
 </html>
