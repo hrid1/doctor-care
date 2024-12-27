@@ -33,7 +33,7 @@
               primary: "#00856f",
               "green-light": "#dce9e2 ",
               "green-light-2": "#f7f9f9",
-              "brand-beige": "#fffaf1",
+              "brand-beige": "#FFFAF1",
               "brand-green-hover": "#00453a",
             },
             fontFamily: {
@@ -44,12 +44,9 @@
       };
     </script>
   </head>
-  <body class="bg-brand-beige font-primary overflow-x-hidden">
+  <body class="bg-green-light-2 font-primary overflow-x-hidden">
     <!-- header section -->
-    <header
-      id="header"
-      class="bg-[#dce9e2]  fixed top-0 left-0 right-0 w-full"
-    >
+    <header id="header" class="bg-[#dce9e2] fixed top-0 left-0 right-0 w-full">
       <nav
         class="container mx-auto max-w-screen-xl flex justify-between items-center p-4"
       >
@@ -87,5 +84,65 @@
         </div>
       </nav>
     </header>
+
+    <!-- Banner Section -->
+    <section
+      class="bg-green-light flex items-center justify-between py-28 px-6"
+    >
+      <!-- text content -->
+      <div
+        class="container max-w-screen-xl mx-auto px-4 flex md:flex-row flex-col items-center justify-between"
+      >
+        <div
+          class="w-full md:w-2/3 text-center md:text-left mb-8 md:mb-0 hero-content"
+        >
+          <p class="text-sm font-bold mb-4 leading-tight text-primary">
+            BOAS-VINDAS A DOCTORCARE 👋
+          </p>
+          <h1 class="text-6xl mb-6 font-bold">
+            Assistência médica simplificada para todos
+          </h1>
+          <p class="text-lg w-full md:w-2/3 mb-8 text-#485145]">
+            Os médicos da DoctorCare vão além dos sintomas para tratar a causa
+            raiz de sua doença e proporcionar uma cura a longo prazo.
+          </p>
+          <button
+            id="contact"
+            class="bg-primary text-white hover:bg-brand-green-hover transition-all duration-300 px-8 py-3 rounded-full flex items-center justify-center gap-2 mx-auto md:ml-0 text-sm"
+          >
+            <i class="ri-whatsapp-line"></i>
+            <span class="font-medium"> Agende sua consulta</span>
+          </button>
+        </div>
+
+        <!-- banner img -->
+        <div
+          class="w-full md:w-1/3 flex justify-center md:justify-end items-center hero-image"
+        >
+          <img
+            src="./images/hero-banner.png"
+            alt=""
+            class="w-full object-cover"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- slat -->
+    <section
+      class="max-w-screen-xl bg-brand-beige rounded grid grid-cols-1 md:grid-cols-3 -mt-28 mx-auto"
+    >
+      <div class="text-center border-r-2 py-14 space-y-1">
+        <h1 class="text-5xl font-bold">+3.500</h1>
+        <p class="text-[#485145]">Pacientes atendidos</p>
+      </div>
+      <div class="text-center border-r-2 py-14 space-y-1">
+        <h1 class="text-5xl font-bold">+15</h1>
+        <p class="text-[#485145]">Especialistas disponíveis</p>
+      </div>
+      <div class="text-center py-14 space-y-1">
+        <h1 class="text-5xl font-bold">+10</h1>
+        <p class="text-[#485145]">Anos no mercado</p>
+      </div>
+    </section>
   </body>
 </html>
